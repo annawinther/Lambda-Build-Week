@@ -29,6 +29,8 @@ text-align: center;
     flex-direction: row;
     justify-content: flex-end;
     justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
 }
  .btn1{
     /* margin: 0px;
@@ -52,12 +54,14 @@ text-align: center;
 .intro{
  display: flex;
  flex-direction: row;
- border: 1px solid red;
+ /* border: 1px solid red; */
  justify-content: space-between;
+ border-bottom: 1px solid black;
+ padding-bottom: 1rem;
 }
 
 .intro img{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 20px;
     padding: 30px;
     width: 80%;
@@ -68,11 +72,3 @@ text-align: center;
     flex-direction: column;
     margin: 50px;
 }
-
-/* .intro h2 {
-    margin: 30px;
-}
-
-.intro p {
-    margin: 30px;
-}  */
