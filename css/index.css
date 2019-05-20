@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     display: flex;
     flex-direction: row;
 }
@@ -7,6 +7,16 @@ span{
     color: green;
     display: flex;
     flex-direction: row;
+} */
+.head{
+ display: flex;
+ flex-direction: row;
+ vertical-align: center;
+}
+ .btn{
+    margin: 25px;
+    /* padding: 20px; */ 
+    text-align: right;
 }
 
 .intro{
@@ -26,12 +36,13 @@ span{
 .about{
     display: flex;
     flex-direction: column;
+    margin: 50px;
 }
 
-.intro h2 {
+/* .intro h2 {
     margin: 30px;
 }
 
 .intro p {
     margin: 30px;
-} 
+}  */
