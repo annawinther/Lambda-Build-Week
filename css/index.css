@@ -8,17 +8,45 @@ span{
     display: flex;
     flex-direction: row;
 } */
+body {
+    padding: 10px;
+    background-color: #e3e3e3;
+}
 .head{
  display: flex;
- flex-direction: row;
- vertical-align: center;
+ flex-direction: column;
+ justify-content: space-between;
+text-align: center;
+ /* background-color: aqua; */
+ margin: 0 auto;
 }
- .btn{
-    margin: 25px;
-    padding: 20px; 
+.head h1{
+ color: red;
+ font-size: 4rem;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+ .btn1{
+    /* margin: 0px;
+    padding: 0px; */
+    font-size: 2rem;
     text-decoration: none;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 10px 10px 10px 10px;
+    text-align: right;
+}
+.btn2{
+    /* margin: 0px;
+    padding: 0px; */
+    font-size: 2rem;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    border-radius: 10px 10px 10px 10px;
+    text-align: left;
 }
 
 .intro{
