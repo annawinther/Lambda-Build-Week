@@ -63,7 +63,8 @@ text-align: center;
     text-align: left;
 }
 .button :hover{
-    background-color: white;
+    background-color: #ced4da;
+    color: #212529;
 }
 .intro{
  display: flex;
@@ -101,4 +102,12 @@ text-align: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.bottom h4{
+    border-bottom: 1px solid #ced4da;
+
+    
+
+  
 }
