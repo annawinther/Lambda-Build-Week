@@ -7,7 +7,7 @@ body {
 .head{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     /* background-color: aqua; */
     margin: 0 auto;
@@ -18,17 +18,17 @@ body {
 .head h1{
     color: #ced4da;
     font-size: 4rem;
-    margin: 20px;
+    margin: 40px;
 }
-.btn{
-    margin: 0px;
-    padding: 10px;
+a.btn{
+    padding: 50px;
+    margin-top: 30px;
     color: #ced4da;
     font-size: 2rem;
     text-decoration: none;
     /* border: 1px solid blue; */
     border-radius: 10px 10px 10px 10px;
-    text-align: right;
+    text-align: left;
 }
 .workouts{
     display: flex;
@@ -36,5 +36,4 @@ body {
     justify-content: space-evenly;
     padding: 20px;
     margin: 20px;
-
 }
