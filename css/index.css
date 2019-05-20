@@ -88,6 +88,17 @@ text-align: center;
 }
 
 .row{
+    display: flex;
+    flex-direction: row;
     padding:1rem;
     /* background-color: grey; */
+    border-bottom: 1px solid black;
+}
+
+.bottom{
+    background-color: #212529;
+    color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
