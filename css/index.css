@@ -71,21 +71,23 @@ text-align: center;
  flex-direction: row;
  /* border: 1px solid red; */
  justify-content: space-between;
- border-bottom: 1px solid black;
+ border-bottom: 0.2rem solid black;
  padding-bottom: 1rem;
 }
 
 .intro img{
     /* border: 1px solid blue; */
-    margin: 20px;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 3rem;
     width: 80%;
 }
 
 .about{
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 3rem;
+    
+
 }
 
 .row{
@@ -106,8 +108,5 @@ text-align: center;
 
 .bottom h4{
     border-bottom: 1px solid #ced4da;
-
-    
-
   
 }
