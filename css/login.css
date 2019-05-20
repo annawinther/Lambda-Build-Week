@@ -1,0 +1,40 @@
+
+body {
+    padding: 10px;
+    background-color: #e3e3e3;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
+    background-color: #212529;
+  
+}
+.head h1{
+    color: #ced4da;
+    font-size: 4rem;
+    margin: 20px;
+}
+.btn{
+    margin: 0px;
+    padding: 10px;
+    color: #ced4da;
+    font-size: 2rem;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    border-radius: 10px 10px 10px 10px;
+    text-align: right;
+}
+.workouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px;
+
+}

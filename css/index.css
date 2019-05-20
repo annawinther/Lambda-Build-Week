@@ -12,11 +12,7 @@ body {
     padding: 10px;
     background-color: #e3e3e3;
 }
-.bg{
-    margin: 0px;
-    width: 50%;
 
-}
 .head{
  display: flex;
  flex-direction: column;
