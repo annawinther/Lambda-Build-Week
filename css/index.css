@@ -12,6 +12,11 @@ body {
     padding: 10px;
     background-color: #e3e3e3;
 }
+.bg{
+    margin: 0px;
+    width: 50%;
+
+}
 .head{
  display: flex;
  flex-direction: column;
@@ -19,9 +24,13 @@ body {
 text-align: center;
  /* background-color: aqua; */
  margin: 0 auto;
+ /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
+ background-color: #212529;
+ height: 13%;
+
 }
 .head h1{
- color: red;
+ color: #ced4da;
  font-size: 4rem;
 }
 .button{
@@ -32,9 +41,11 @@ text-align: center;
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
 }
+
  .btn1{
-    /* margin: 0px;
-    padding: 0px; */
+    margin: 0px;
+    padding: 10px;
+    color: #ced4da;
     font-size: 2rem;
     text-decoration: none;
     /* border: 1px solid blue; */
@@ -42,15 +53,18 @@ text-align: center;
     text-align: right;
 }
 .btn2{
-    /* margin: 0px;
-    padding: 0px; */
+    margin: 0px;
+    padding: 10px;
+    color:#ced4da;
     font-size: 2rem;
     text-decoration: none;
     /* border: 1px solid blue; */
     border-radius: 10px 10px 10px 10px;
     text-align: left;
 }
-
+.button :hover{
+    background-color: white;
+}
 .intro{
  display: flex;
  flex-direction: row;
@@ -71,4 +85,9 @@ text-align: center;
     display: flex;
     flex-direction: column;
     margin: 50px;
+}
+
+.row{
+    padding:1rem;
+    /* background-color: grey; */
 }
