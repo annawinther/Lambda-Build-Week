@@ -1,4 +1,5 @@
-/* h1 {
+/*
+h1 {
     display: flex;
     flex-direction: row;
 }
@@ -7,10 +8,10 @@ span{
     color: green;
     display: flex;
     flex-direction: row;
-} */
+} 
 
 body {
-    /* padding: 10px; */
+    padding: 10px;
     background-color: #e3e3e3;
     font-family:"Helvetica","Arial",sans-serif;
 }
@@ -32,11 +33,11 @@ p{
  flex-direction: column;
  justify-content: space-between;
  text-align: center;
- /* background-color: aqua; */
+ background-color: aqua;
  margin: 0 auto;
- /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
+ background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg");
  background-color: #212529;
- /* height: 13%; */
+ height: 13%;
  width: 100%;
 
 }
@@ -59,7 +60,7 @@ p{
     color: #ced4da;
     font-size: 2rem;
     text-decoration: none;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     border-radius: 10px 10px 10px 10px;
     text-align: right;
 }
@@ -69,7 +70,7 @@ p{
     color:#ced4da;
     font-size: 2rem;
     text-decoration: none;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     border-radius: 10px 10px 10px 10px;
     text-align: left;
 }
@@ -80,15 +81,15 @@ p{
 .intro{
  display: flex;
  flex-direction: row;
- /* border: 1px solid red; */
+ border: 1px solid red;
  justify-content: space-between;
  border-bottom: 0.2rem solid black;
  padding-bottom: 1rem;
 }
 
 .intro img{
-    /* border: 1px solid blue; */
-    /* margin: 0 auto; */
+    border: 1px solid blue; */
+    /* margin: 0 auto;
     padding-top: 4rem;
     padding-bottom: 2rem;
     width: 100%;
@@ -104,16 +105,16 @@ p{
     display: flex;
     flex-direction: row;
     padding:1rem;
-    /* background-color: grey; */
+    background-color: grey;
     border-bottom: 1px solid black;
 }
 
 .home .row .us{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding: 20px;
 }
 .home .row .you{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding: 20px;
 }
 
@@ -126,9 +127,8 @@ p{
 }
 
 .bottom h4{
-    /* border-bottom: 1px solid #ced4da; */
+    border-bottom: 1px solid #ced4da;
     font-size: 1.5rem;
-  
 }
 
 .logIn .head{
@@ -136,11 +136,11 @@ p{
  flex-direction: column;
  justify-content: space-between;
  text-align: center;
- /* background-color: aqua; */
+ background-color: aqua;
  margin: 0 auto;
- /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
+ background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg");
  background-color: #212529;
- /* height: 13%; */
+ height: 13%;
  width: 95%;
  padding: 1.5rem;
 }
@@ -156,7 +156,7 @@ p{
     color: #ced4da;
     font-size: 2rem;
     text-decoration: none;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     border-radius: 10px 10px 10px 10px;
     text-align: right;
 }
@@ -171,10 +171,68 @@ p{
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem;
-    /* background-color: grey; */
-    /* border-bottom: 1px solid black; */
+    background-color: grey; */
+    /* border-bottom: 1px solid black;
+}
+*/
+
+.container .header{
+    border: 1px solid red;
+    /* position: fixed; */
 }
 
+.container .header nav{
+    margin: 20px;
+    display: flex;
+    /* position: fixed; */
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+nav a {
+    vertical-align: center;
+    /* padding-top: 20px; */
+    text-decoration: none;
+    color: green;
+}
+nav .logo{
+    color: red;
+    font-size: 30px;
+}
 
+.intro{
+    border: 1px solid green;
+    padding: 20px;
+    height: 400px;
+}
 
+.intro .row{
+    background-color: red;
+    height: 190px;
+}
+.intro .row h1{
+    font-size:4rem;
+    text-align: center;
+}
+.intro .row p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.intro .row .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+.intro .row .buttons .btn{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid red;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1rem;
+    margin: 10px;
+}
+.btn2{
+    background-color: yellow;
+}
