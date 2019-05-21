@@ -167,5 +167,15 @@ p{
 }
 
 form.work-form{
-    display: tab;
+    display: flex;
+    flex-direction: column;
+}
+label, input {
+    display: flex;
+
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
 }
