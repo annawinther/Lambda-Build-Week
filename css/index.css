@@ -175,6 +175,11 @@ p{
     /* border-bottom: 1px solid black;
 }
 */
+body {
+    padding: 10px;
+    background-color: #e3e3e3;
+    font-family:"Helvetica","Arial",sans-serif;
+}
 
 .container .header{
     border: 1px solid red;
@@ -204,17 +209,20 @@ nav .logo{
     border: 1px solid green;
     padding: 20px;
     height: 400px;
+    background-color: #343a40;
+    color: white;
 }
 
 .intro .row{
-    background-color: red;
     height: 190px;
 }
 .intro .row h1{
-    font-size:4rem;
+    font-size: 4rem;
+    /* color: white; */
     text-align: center;
 }
 .intro .row p{
+    /* color: white; */
     text-align: center;
     font-size: 1.5rem;
 }
@@ -225,6 +233,8 @@ nav .logo{
     text-decoration: none;
 }
 .intro .row .buttons .btn{
+    color: white;
+    font-size: 30px;
     text-decoration: none;
     color: black;
     font-size: 1rem;
@@ -233,6 +243,8 @@ nav .logo{
     padding: 1rem;
     margin: 10px;
 }
+
 .btn2{
+    color: white;
     background-color: yellow;
 }
