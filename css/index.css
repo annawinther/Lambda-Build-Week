@@ -274,7 +274,9 @@ nav .logo{
     size: 120px;
 }
 
-
+.works{
+    text-align: center;
+}
 .row-col {
     margin: 0 auto;
     display: flex;
