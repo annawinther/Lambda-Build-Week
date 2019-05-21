@@ -9,28 +9,29 @@ span{
     flex-direction: row;
 } */
 body {
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #e3e3e3;
     font-family:"Helvetica","Arial",sans-serif;
 }
 p{
     line-height:1.7;
-    font-size:1.2em
+    font-size:1.2em;
 }
 
-.head{
+.home .head{
  display: flex;
  flex-direction: column;
  justify-content: space-between;
-text-align: center;
+ text-align: center;
  /* background-color: aqua; */
  margin: 0 auto;
  /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
  background-color: #212529;
- height: 13%;
+ /* height: 13%; */
+ width: 100%;
 
 }
-.head h1{
+.home .head h1{
  color: #ced4da;
  font-size: 4rem;
 }
@@ -43,7 +44,7 @@ text-align: center;
     padding-bottom: 1rem;
 }
 
- .btn1{
+.btn1{
     margin: 0px;
     padding: 10px;
     color: #ced4da;
@@ -119,4 +120,38 @@ text-align: center;
     border-bottom: 1px solid #ced4da;
     font-size: 1.5rem;
   
+}
+
+.logIn .head{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
+ /* background-color: aqua; */
+ margin: 0 auto;
+ /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
+ background-color: #212529;
+ /* height: 13%; */
+ width: 100%;
+}
+
+.logIn .head h1{
+    color: #ced4da;
+    font-size: 4rem;
+}
+
+.logIn .head .btn{
+    margin: 0px;
+    padding: 10px;
+    color: #ced4da;
+    font-size: 2rem;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+    border-radius: 10px 10px 10px 10px;
+    text-align: right;
+}
+
+.logIn .head .btn:hover{
+    background-color: #ced4da;
+    color: #212529;
 }
