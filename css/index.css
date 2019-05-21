@@ -176,7 +176,6 @@ p{
 }
 */
 body {
-    padding: 10px;
     background-color: #e3e3e3;
     font-family:"Helvetica","Arial",sans-serif;
 }
@@ -233,7 +232,6 @@ nav .logo{
     text-decoration: none;
 }
 .intro .row .buttons .btn{
-    color: white;
     font-size: 30px;
     text-decoration: none;
     color: black;
@@ -243,8 +241,35 @@ nav .logo{
     padding: 1rem;
     margin: 10px;
 }
-
 .btn2{
-    color: white;
-    background-color: yellow;
+    color: green;
+    background-color: pink;
+}
+.about{
+    border: 1px solid blue;
+}
+.about .text{
+    padding: 20px;
+    border: 1px solid black;
+}
+.about .text .row h2{
+    font-size: 40px;
+   text-align: center;
+}
+.about .text .row .sub-heading{
+    font-size: 20px;
+    text-align: center;
+}
+.about .row .about-text{
+    line-height: 1.7;
+    padding: 10px;
+    text-align: center;
+}
+
+.pixova-pie-chart-custom-text{
+    font-size: 50px;
+}
+
+.chart{
+    size: 120px;
 }
