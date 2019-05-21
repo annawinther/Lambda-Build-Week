@@ -281,11 +281,12 @@ nav .logo{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    max-width: 95%;
     margin: 10px;
 }
-img{
-    
-    
+
+.row .text-center .thumbnail a img .example {
+    width: 50%;
+    border: 1px solid red;
 }
