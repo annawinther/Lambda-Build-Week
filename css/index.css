@@ -35,7 +35,7 @@ p{
  color: #ced4da;
  font-size: 4rem;
 }
-.button{
+.home .button{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -44,7 +44,7 @@ p{
     padding-bottom: 1rem;
 }
 
-.btn1{
+ .btn1{
     margin: 0px;
     padding: 10px;
     color: #ced4da;
@@ -91,7 +91,7 @@ p{
     margin: 3rem;
 }
 
-.row{
+.home .row{
     display: flex;
     flex-direction: row;
     padding:1rem;
@@ -99,11 +99,11 @@ p{
     border-bottom: 1px solid black;
 }
 
-.row .us{
+.home .row .us{
     /* border: 1px solid black; */
     padding: 20px;
 }
-.row .you{
+.home .row .you{
     /* border: 1px solid black; */
     padding: 20px;
 }
@@ -132,7 +132,8 @@ p{
  /* background-image: url("https://static01.nyt.com/images/2018/02/01/magazine/04mag-olympics-alpine-skiing-image1/mag-olympics-images-slide-65JM-superJumbo.jpg"); */
  background-color: #212529;
  /* height: 13%; */
- width: 100%;
+ width: 95%;
+ padding: 1.5rem;
 }
 
 .logIn .head h1{
@@ -154,4 +155,13 @@ p{
 .logIn .head .btn:hover{
     background-color: #ced4da;
     color: #212529;
+}
+
+.logIn .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    /* background-color: grey; */
+    /* border-bottom: 1px solid black; */
 }
