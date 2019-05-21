@@ -273,3 +273,15 @@ nav .logo{
 .chart{
     size: 120px;
 }
+
+
+.row-col {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+}
+img{
+    
+    
+}
