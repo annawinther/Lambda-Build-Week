@@ -8,6 +8,7 @@ span{
     display: flex;
     flex-direction: row;
 } */
+
 body {
     /* padding: 10px; */
     background-color: #e3e3e3;
@@ -16,6 +17,14 @@ body {
 p{
     line-height:1.7;
     font-size:1.2em;
+}
+
+@media (max-width: 800px){
+    .home .head{
+    width: 100%;
+    align-content: center;
+    margin: 1px 1px 1px 1px;
+  }
 }
 
 .home .head{
@@ -117,7 +126,7 @@ p{
 }
 
 .bottom h4{
-    border-bottom: 1px solid #ced4da;
+    /* border-bottom: 1px solid #ced4da; */
     font-size: 1.5rem;
   
 }
@@ -166,16 +175,6 @@ p{
     /* border-bottom: 1px solid black; */
 }
 
-form.work-form{
-    display: flex;
-    flex-direction: column;
-}
-label, input {
-    display: flex;
 
-    margin-bottom: 10px;
-}
 
-label {
-    padding-right: 10px;
-}
+
