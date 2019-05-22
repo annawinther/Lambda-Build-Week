@@ -294,7 +294,6 @@ nav .logo{
     border: 1px solid orange;
 }
 
-
 .breakfast-img{
     width: 30%;
 }
@@ -305,4 +304,34 @@ nav .logo{
 .dinner-img{
     width: 30%;
     height:90%;
+}
+.row-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row-people{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.contact .row{
+    /* background-color: green; */
+    text-align: center;
+}
+.col{
+    /* background-color: blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.row-contact{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.row-contact .form{
+    /* background-color: yellow; */
+    
 }
