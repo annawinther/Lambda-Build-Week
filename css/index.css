@@ -345,7 +345,8 @@ body {
 .works{
     background-color: #e9ecef;
     overflow: hidden;
-    padding: 20px;
+    padding: 0px;
+    height: 100%;
    
 }
 .work{
@@ -383,8 +384,9 @@ body {
     /* border: 1px solid orange; */
 }
 .news{
-    margin-top: 50px;
-    margin-left: 20px;
+    /* margin-top: 50px;
+    margin-left: 20px; */
+    background-color: #e9ecef;
     /* border: 1px solid yellow; */
     /* width: 100%; */
 }
