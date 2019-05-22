@@ -281,12 +281,28 @@ nav .logo{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 95%;
+    justify-content: space-around;
+    max-width: 90%;
     margin: 10px;
 }
 
 .row .text-center .thumbnail a img .example {
     width: 50%;
     border: 1px solid red;
+}
+.row {
+    border: 1px solid orange;
+}
+
+
+.breakfast-img{
+    width: 30%;
+}
+.lunch-img{
+    width: 30%;
+    height:200%;
+}
+.dinner-img{
+    width: 30%;
+    height:90%;
 }
