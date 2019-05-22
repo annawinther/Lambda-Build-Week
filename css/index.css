@@ -186,7 +186,7 @@ body {
 }
 
 .container .header nav{
-    margin: 20px;
+    margin: 0px;
     display: flex;
     /* position: fixed; */
     flex-direction: row;
@@ -274,10 +274,7 @@ body {
     text-decoration: none;
     color: black;
 } */
-nav .logo{
-    color: black;
-    font-size: 30px;
-}
+
 .fa-caret-down {
     float: right;
     padding-right: 8px;
@@ -345,16 +342,14 @@ nav .logo{
     padding: 10px;
     text-align: center;
 }
-
-.pixova-pie-chart-custom-text{
-    font-size: 50px;
+.work{
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: space-between; */
+    /* border: 1px solid red; */
+    padding: 10px;
 }
-
-.chart{
-    size: 120px;
-}
-
-.works{
+.works .row{
     text-align: center;
 }
 .row-col {
@@ -365,10 +360,12 @@ nav .logo{
     max-width: 90%;
     margin: 10px;
 }
-
-.row .text-center .thumbnail a img .example {
-    width: 50%;
-    border: 1px solid red;
+.work .work-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+   height: 100%;
 }
 .row {
     /* border: 1px solid orange; */
