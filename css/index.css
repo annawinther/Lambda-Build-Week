@@ -224,6 +224,10 @@ body {
     background-color: grey;
   } */
   /* Dropdown content (hidden by default) */
+  /* .dropdown-content{
+    display: flex;
+    flex-direction: row;
+  } */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -241,7 +245,8 @@ body {
     display: flex;
     flex-direction: row;
     text-align: left;
-
+    color: red;
+    display: none;
   }
   
 /* Add a grey background color to dropdown links on hover
@@ -255,7 +260,7 @@ body {
     flex-direction: column;
   } */
   
- nav a{
+ /* nav a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -268,14 +273,14 @@ body {
     text-align: left;
     cursor: pointer;
     outline: none;
-}
+} */
 
-.navbar a {
+/* .navbar a {
     vertical-align: center;
     padding-top: 20px;
     text-decoration: none;
     color: black;
-} 
+}  */
 
 /* .fa-caret-down {
     float: right;

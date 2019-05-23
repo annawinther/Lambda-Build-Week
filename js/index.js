@@ -1,3 +1,4 @@
+// MENU SHOWING WHEN CLICKED
 const toggleMenu = () => {
  // Toggle the "menu--open" class on your menu refence. 
    menu.classList.toggle('dropdown-content');
@@ -11,3 +12,9 @@ const button = document.querySelector(".dropdown");
 button.addEventListener('click', toggleMenu )
 
 
+// HOVER OVER LEARN MORE 
+const learn = documnet.querySelector('.btn1');
+
+learn.addEventListener('mouseover', (event) => {
+ event.target.style = 'color: yellow'
+})
