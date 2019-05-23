@@ -210,10 +210,9 @@ font-size:0.5em;
 }
 .col-work a{
     text-decoration: none;
-    color: black;
+    color: rgb(139, 114, 114);
     max-width: 70%; 
 }
-
  .works .row .col-work {
     background-color: ;
     background-position: center;
@@ -242,15 +241,17 @@ font-size:0.5em;
     width: 100%;
 } */
 
-.text-center h2{
-    padding-top:20px;
-    text-align: center;
-    /* border-bottom: 2px solid red; */
-}
-.text-center-sub-heading{
-    display: flex;
-    flex-direction: column;
-    padding-bottom:20px;
+@media (max-width:600px){
+    .works .row .col-work {
+        flex-direction: column;
+        background-color: red;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .work .row .com-work .col-30{
+      
+    }
 }
 
 .team{
@@ -266,6 +267,15 @@ font-size:0.5em;
     flex-direction: row;
     justify-content: space-between
 }
+
+@media(max-width:600px){
+.row-people{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+}
+
 .contact{
     background-color: #e3e3e3;
 }
@@ -284,7 +294,7 @@ font-size:0.5em;
     /* background-color: red; */
     display: flex;
     flex-direction: row;
-    max-width:1000px;
+    max-width: 1000px;
 }
 .row-contact .col{
     width:50%;
@@ -324,6 +334,33 @@ input[type=submit]{
     width: auto;
 }
    
+
+@media(max-width:600px){
+    .contact .row .col{
+        display: flex;
+        flex-direction: column;
+        /* background-color: brown; */
+    }
+    .row-contact{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 1000px;
+        align-items: center;
+    }
+    .contact .row .row-contact .col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+     .row .row-contact .col .col-50{
+        /* color: red; */
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+
 .bottom{
     background-color: grey;
     padding:20px;
