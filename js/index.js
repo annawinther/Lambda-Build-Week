@@ -15,15 +15,12 @@ button.addEventListener('click', toggleMenu )
 // HOVER OVER LEARN MORE 
 const buttons = document.querySelectorAll('.btn');
 
-// buttons.addEventListener('mouseover', (event) => {
-//  event.target.style = 'color: yellow'
-// })
-
 buttons.forEach(button => button.addEventListener('mouseover', color ));
 buttons.forEach(button => button.addEventListener('mouseout', white));
 
 function color (event){
-  event.target.style = "color: yellow";
+  event.target.style.color = " yellow";
+  event.target.style.borderColor = "yellow";
 }
 
 function white (event){
