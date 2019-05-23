@@ -24,9 +24,11 @@ p{
     z-index: 100;
     margin-bottom: 20px;
   }
-  .header h1 {
-    margin: 0;
-    font-size: 20px;
+  
+  .logo a{
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
   }
   .menu-button {
     position: absolute;
@@ -178,11 +180,11 @@ section.about{
 }
 
 section.appstore{
-        background:#f0f0f0;
-        padding-top:50px;
-        padding-bottom:50px;
-        border-top: 1px solid #e3e3e3;
-        border-bottom: 1px solid #e3e3e3;
+    background:#f0f0f0;
+    padding-top:50px;
+    padding-bottom:50px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .row-people{
@@ -212,53 +214,6 @@ section.appstore{
 
 .about{
     margin-bottom:50px;
-}
-
-
-
-/* .buttons .btn .btn:hover{
-    background-color: red;
-} */
-
-/* .about{
-    /* border: 1px solid blue; */
-
-/* .about .text{
-    padding: 20px;
-    /* border: 1px solid black; 
-}
-.about .text .row h2{
-    font-size: 40px;
-   text-align: center;
-}
-.about .text .row .sub-heading{
-    font-size: 20px;
-    text-align: center;
-}
-.about .row .about-text{
-    line-height: 1.7;
-    padding: 10px;
-    text-align: center;
-} */
-
-
-
-
-@media (max-width:600px){
-    .works .row .col-work {
-        display: flex;
-        flex-direction: row;
-        /* background-color: red; */
-        /* justify-content: space-evenly; */
-        margin: 0 auto;
-        padding: 40px;
-    
-        
-    }
-     .col-30{
-        display: none;
-        text-align: center;
-    }
 }
 
 
@@ -329,11 +284,23 @@ section{
 }
 
 @media(max-width:600px){
-.row-people{
+    .works .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-team{
+        text-align: center;
+    }
+    .row-people{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     }
+
 }
 
 .contact .row{
@@ -458,17 +425,11 @@ input[type=submit]{
     .bottom .row{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: left;
     }
     .bottom .row .footer{
         display: flex;
         flex-direction: column;
-        /* background-color: blue; */
-        max-width: 35%;
-    }
-    .bottom .copyright{
-        text-align: center;
-        padding-bottom: none;
+        width:100%;
+        text-align:center;
     }
 }
