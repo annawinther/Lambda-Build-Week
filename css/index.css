@@ -58,7 +58,6 @@ body {
     display: block;
   }
 
-/* MY WORK FROM HERE */
 
   @media (max-width: 600px){
       .menu{
@@ -77,38 +76,7 @@ body {
           flex-direction: column;
       }
  }   
-  /* Show the dropdown menu on hover */
-/* .dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-  } */
   
- /* nav a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: flex;
-    flex-direction: row;
-    border: none;
-    background: white;
-    width:100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-} */
-
-/* .navbar a {
-    vertical-align: center;
-    padding-top: 20px;
-    text-decoration: none;
-    color: black;
-}  */
-
-/* .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  } */
 .intro{
     /* border: 1px solid green; */
     padding: 20px;
@@ -184,12 +152,12 @@ font-size:0.5em;
     background-color: red;
 } */
 
-.about{
+/* .about{
     /* border: 1px solid blue; */
-}
-.about .text{
+
+/* .about .text{
     padding: 20px;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; 
 }
 .about .text .row h2{
     font-size: 40px;
@@ -203,84 +171,76 @@ font-size:0.5em;
     line-height: 1.7;
     padding: 10px;
     text-align: center;
-}
+} */
 .works{
     /* border: 1px solid red; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #e9ecef;
     /* overflow: hidden; */
     padding: 0px;
     height: 100%;
     margin:0px;
 }
-.work{
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* border: 1px solid blue; */
-    padding-left: 20px;
-    margin:0px;
-}
 .works .row{
-    text-align: center;
+    text-align: left;
 }
-.row-col {
-    margin: 0 auto;
+
+.col-30 {
+    /* margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     max-width: 90%;
     margin: 0px;
-    color: black;
+    color: black; */
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+    padding-left: 0px;
+    /* background-color: red; */
+    max-width: 50%;
+    text-align: left;
 }
-.row-col a{
+.col .work{
+    display: flex;
+    flex-direction: column;
+}
+.col-work a{
     text-decoration: none;
     color: black;
-    /* border-bottom: 1px solid black; */
-    width: 70%;
-}
-.work .work-img{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    /* overflow: hidden; */
-}
-.work .work-img .one{
-
+    max-width: 70%; 
 }
 
-.row-work {
-    background-color: grey;
-    height: 400px;
+ .works .row .col-work {
+    background-color: ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 20px;
+    padding-bottom: 40px;
     color: black;
     /* border: 1px solid orange; */
-}
-.row-work .workout-text{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+} 
+.row .col-work .workout-text{
     text-align: right;
-    margin:20px;
+    margin:0px;
     color: black;
-}
-
-.news{
-    /* margin-top: 50px;
-    margin-left: 20px; */
-    background-color: #e9ecef;
-    /* border: 1px solid yellow; */
-    /* width: 100%; */
 }
 
 .appstore .row{
     padding-top:50px;
     padding-bottom:50px;
 }
+/* .appstore .row .col .center .img{
+    width: 100%;
+} */
 
 .text-center h2{
     padding-top:20px;
@@ -292,29 +252,7 @@ font-size:0.5em;
     flex-direction: column;
     padding-bottom:20px;
 }
-.breakfast-img{
-    width: 30%;
-}
-.lunch-img{
-    width: 30%;
-    height:200%;
-}
-.dinner-img{
-    width: 30%;
-    height:90%;
-}
-.recipes {
-text-align: center;
- /* background-color: red; */
- font-size: 20px;
- padding: 20px;
- /* border: 1px solid grey; */
- width:90%;
-}
-.recipes button{
-text-align: center;
-size:50px;
-}
+
 .team{
     padding-top:90px;
 }
@@ -357,7 +295,7 @@ form .text{
 }
 form{
     margin: 20px;
-    width: 100%;
+    width: 90%;
 }
 input{
     width: 100%;
@@ -386,7 +324,6 @@ input[type=submit]{
     width: auto;
 }
    
-
 .bottom{
     background-color: grey;
     padding:20px;
@@ -415,7 +352,3 @@ input[type=submit]{
     max-width: 35%;
 }
 
-.row .copyright p{
-    /* padding-top: 20px; */
-    color: red;
-}
