@@ -1,15 +1,31 @@
-// MENU SHOWING WHEN CLICKED
+// // MENU SHOWING WHEN CLICKED
+// const toggleMenu = () => {
+//    menu.classList.toggle('dropdown-content');
+//  }
+
+// // Start Here: Create a reference to the ".menu" class
+// const menu = document.querySelector('.dropdown-content');
+
+// const button = document.querySelector(".dropbtn");
+
+// button.addEventListener('click', toggleMenu)
+// // button.addEventListener('click', move)
+
+// MENU BAR DROP DOWN
+
 const toggleMenu = () => {
-   menu.classList.toggle('dropdown-content');
- }
+  // Toggle the "menu--open" class on your menu refence. 
+ menu.classList.toggle('menu--open');
+}
 
 // Start Here: Create a reference to the ".menu" class
-const menu = document.querySelector('.dropdown-content');
+const menu = document.querySelector('.menu');
 
-const button = document.querySelector(".dropdown");
+// create a reference to the ".menu-button" class
+const menuButton = document.querySelector('.menu-button');
 
-button.addEventListener('click', toggleMenu)
-// button.addEventListener('click', move)
+// Using your menuButton reference, add a click handler that calls toggleMenu
+menuButton.addEventListener('click', toggleMenu);
 
 
 
