@@ -13,8 +13,19 @@ button.addEventListener('click', toggleMenu )
 
 
 // HOVER OVER LEARN MORE 
-const learn = documnet.querySelector('.btn1');
+const buttons = document.querySelectorAll('.btn');
 
-learn.addEventListener('mouseover', (event) => {
- event.target.style = 'color: yellow'
-})
+// buttons.addEventListener('mouseover', (event) => {
+//  event.target.style = 'color: yellow'
+// })
+
+buttons.forEach(button => button.addEventListener('mouseover', color ));
+buttons.forEach(button => button.addEventListener('mouseout', white));
+
+function color (event){
+  event.target.style = "color: yellow";
+}
+
+function white (event){
+  event.target.style = "color: white";
+}
