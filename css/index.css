@@ -175,6 +175,7 @@ p{
     /* border-bottom: 1px solid black;
 }
 */
+
 body {
     background-color:white;
     font-family:"Helvetica","Arial",sans-serif;
@@ -195,7 +196,7 @@ body {
 }
 
 .navbar a {
-    float: left;
+    display: flex;
     font-size: 16px;
     color: black;
     text-align: center;
@@ -203,11 +204,11 @@ body {
     text-decoration: none;
   }
 .dropdown {
-    float: left;
+    float: center;
     overflow: hidden;
   }
-  
-  .dropdown .dropbtn {
+ .dropdown .dropbtn {
+    align-content: right;
     font-size: 16px; 
     border: 1px solid black;
     outline: none;
@@ -217,11 +218,11 @@ body {
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
+
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+/* .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: grey;
-  }
-  
+  } */
   /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -237,48 +238,49 @@ body {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: row;
     text-align: left;
+
   }
   
-/* Add a grey background color to dropdown links on hover */
+/* Add a grey background color to dropdown links on hover
 .dropdown-content a:hover {
     background-color: #ddd;
-  }
+  } */
 
   /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-/* nav a .dropdown-btn{
+/* .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+ nav a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
-    display: block;
+    display: flex;
+    flex-direction: row;
     border: none;
-    background: red;
+    background: white;
     width:100%;
     text-align: left;
     cursor: pointer;
     outline: none;
 }
-.dropdown-container {
-    display: none;
-    background-color: #262626;
-    padding-left: 8px;
-} */
-/* nav a {
+
+.navbar a {
     vertical-align: center;
     padding-top: 20px;
     text-decoration: none;
     color: black;
-} */
+} 
 
-.fa-caret-down {
+/* .fa-caret-down {
     float: right;
     padding-right: 8px;
-  }
+  } */
 .intro{
     /* border: 1px solid green; */
     padding: 20px;
@@ -322,6 +324,10 @@ body {
 .btn1{
     border: 2px solid white;
 }
+/* .buttons .btn .btn:hover{
+    background-color: red;
+} */
+
 .about{
     /* border: 1px solid blue; */
 }
@@ -440,6 +446,7 @@ size:50px;
 .contact .row{
     /* background-color: green; */
     text-align: center;
+    padding-top:20px;
 }
 .col{
     /* background-color: blue; */
@@ -451,7 +458,18 @@ size:50px;
     /* background-color: red; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.row-contact .col{
+    
+}
+form .text{
+    color: black;
+    text-align: left;
+}
+form{
+    margin: 20px;
+    width: 100%;
 }
 input{
     width: 100%;
@@ -461,13 +479,13 @@ input{
     background-color: #e3e3e3;
     border: 1px solid grey;
 }
-form{
-    margin:20px;
+textarea[type=text]{
+    background-color: #e3e3e3;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid grey;
 }
-form .text{
-    color: black;
-    text-align: left;
-}
+
 input[type=submit]{
     background-color: #f2c351;
     color: white;
@@ -480,10 +498,7 @@ input[type=submit]{
     width: auto;
 }
    
-textarea{
-    background-color: #e3e3e3;
-    border: 1px solid grey;
-}
+
 .bottom{
     background-color: grey;
     padding:20px;

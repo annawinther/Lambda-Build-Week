@@ -1,29 +1,13 @@
-// function Workout(workoutName,date){
-//     this.workoutName = workoutName;
-//     this.date = date;
-// }
+const toggleMenu = () => {
+ // Toggle the "menu--open" class on your menu refence. 
+   menu.classList.toggle('dropdown-content');
+ }
 
-// function Exercise(workout, exercise, amount, reps, target){
-//     this.workout = workout;
-//     this.exercise = exercise;
-//     this.amount = amount;
-//     this.reps = reps;
-//     this.target = target;
-// }
+// Start Here: Create a reference to the ".menu" class
+const menu = document.querySelector('.dropdown-content');
 
-// const deadlift = new Exercise("stronglifts","deadlift", "20kg", 5, "lower back");
+const button = document.querySelector(".dropdown");
 
-const dropdown = document.querySelector(".dropdown-btn");
+button.addEventListener('click', toggleMenu )
 
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
