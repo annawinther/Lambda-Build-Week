@@ -19,15 +19,15 @@ menuButton.addEventListener('click', toggleMenu);
 //ADD HOVER EFFECT OVER MENU ITEMS
 const menuItem = document.querySelectorAll('li');
 
-const yellow = () => {
-  event.target.style.color = "#fcc419";
+const grey = () => {
+  event.target.style.color = "grey";
 }
 
 const black = () => {
   event.target.style.color = "black";
 }
 
-menuItem.forEach(item => item.addEventListener('mouseover', yellow));
+menuItem.forEach(item => item.addEventListener('mouseover', grey));
 menuItem.forEach(item => item.addEventListener('mouseout', black));
 
 
@@ -53,7 +53,8 @@ buttons.forEach(button => button.addEventListener('mouseout', white));
 const form = document.querySelectorAll('.popupForm');
 
 const openForm = () => {
-  form.classList.toggle('form--open');
+  /*form.classList.toggle('form--open');*/
+  alert("Coming Soon!");
 }
 buttons.forEach(button => button.addEventListener('click', openForm));
 

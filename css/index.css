@@ -1,4 +1,110 @@
-
+body {
+  background-color: white;
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+  margin: 0px;
+}
+h2 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.menu-button {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 200px;
+  background-color: lightgrey;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 30px 0;
+  text-align: left;
+}
+.menu ul a {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 30px 0;
+  align-content: center;
+  color: black;
+  text-decoration: none;
+}
+.menu--open {
+  display: block;
+}
+@media (max-width: 600px) {
+  .menu {
+    width: 100%;
+    height: 80%;
+  }
+  .menu ul li {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .heading ul {
+    padding-inline-start: 0px;
+  }
+  .row-col {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+  }
+  .row-col .work {
+    flex-direction: column;
+  }
+}
+.bottom {
+  background-color: #313233;
+  padding: 20px;
+  padding-bottom: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+.bottom .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.bottom {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bottom .row .footer {
+  display: flex;
+  flex-direction: column;
+}
+.bottom .copyright {
+  color: red;
+  text-align: center;
+}
+.bottom .footer p {
+  font-size: 1em;
+  line-height: 1;
+}
+@media (max-width: 600px) {
+  .bottom .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom .row .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
 body {
   background-color: white;
   font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
@@ -29,58 +135,6 @@ p {
   color: white;
   font-size: 2rem;
 }
-.menu-button {
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-  }
-  .menu {
-    display: none;
-    position: fixed;
-    right: 0;
-    width: 200px;
-    background-color: lightgrey;
-    border-left: none;
-    border-bottom: none;
-    z-index: 2;
-  }
-  .menu ul li {
-    list-style-type: none;
-    font-size: 20px;
-    padding: 30px 0;
-    text-align: left;
-  }
-  .menu ul a {
-    list-style-type: none;
-    font-size: 20px;
-    padding: 30px 0;
-    align-content: center;
-    color: black;
-    text-decoration: none;
-  }
-  .menu--open {
-    display: block;
-  }
-  /* .menu ul li:hover{
-        background-color: grey;
-    } */
-  @media (max-width: 600px) {
-    .menu {
-      width: 100%;
-      height: 50vh;
-    }
-    .menu ul li {
-      text-align: center;
-    }
-    .row-col {
-      background-color: brown;
-      display: flex;
-      flex-direction: column;
-    }
-    .row-col .work {
-      flex-direction: column;
-    }
-  }
 .intro {
   padding: 20px;
   background-color: #343a40;
@@ -310,6 +364,7 @@ textarea {
   background-color: #e3e3e3;
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid grey;
 }
 input[type=submit] {
   background-color: #f2c351;
@@ -345,46 +400,7 @@ input[type=submit] {
     font-size: 10px;
     margin: 0;
   }
+  .row-contact .col {
+    width: 100%;
+  }
 }
-.bottom {
-    background-color: #313233;
-    padding: 20px;
-    padding-bottom: none;
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .bottom .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .bottom {
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .bottom .row .footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .bottom .copyright {
-    color: red;
-    text-align: center;
-  }
-  .bottom .footer p {
-    font-size: 1em;
-    line-height: 1;
-  }
-  @media (max-width: 600px) {
-    .bottom .row {
-      display: flex;
-      flex-direction: column;
-    }
-    .bottom .row .footer {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-    }
-  }
