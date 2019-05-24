@@ -1,15 +1,3 @@
-// // MENU SHOWING WHEN CLICKED
-// const toggleMenu = () => {
-//    menu.classList.toggle('dropdown-content');
-//  }
-
-// // Start Here: Create a reference to the ".menu" class
-// const menu = document.querySelector('.dropdown-content');
-
-// const button = document.querySelector(".dropbtn");
-
-// button.addEventListener('click', toggleMenu)
-// // button.addEventListener('click', move)
 
 // MENU BAR DROP DOWN
 
@@ -28,19 +16,45 @@ const menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', toggleMenu);
 
 
+//ADD HOVER EFFECT OVER MENU ITEMS
+const menuItem = document.querySelectorAll('li');
 
-// HOVER OVER LEARN MORE 
+const yellow = () => {
+  event.target.style.color = "#fcc419";
+}
+
+const black = () => {
+  event.target.style.color = "black";
+}
+
+menuItem.forEach(item => item.addEventListener('mouseover', yellow));
+menuItem.forEach(item => item.addEventListener('mouseout', black));
+
+
+
+// HOVER OVER DOWNLOAD button
 const buttons = document.querySelectorAll('.btn1');
+
+const color = () => {
+  event.target.style.color =  "#fcc419";
+  event.target.style.borderColor = " #fcc419";
+}
+const white = () => {
+  event.target.style.color = "white";
+  event.target.style.borderColor = "white";
+}
 
 buttons.forEach(button => button.addEventListener('mouseover', color ));
 buttons.forEach(button => button.addEventListener('mouseout', white));
 
-function color (event){
-  event.target.style.color =  "#fcc419";
-  event.target.style.borderColor = " #fcc419";
-}
 
-function white (event){
-  event.target.style.color = "white";
-  event.target.style.borderColor = "white";
+
+// DOWNLOAD APPSTORE BUTTON
+const form = document.querySelectorAll('.popupForm');
+
+const openForm = () => {
+  form.classList.toggle('form--open');
 }
+buttons.forEach(button => button.addEventListener('click', openForm));
+
+
