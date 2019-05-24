@@ -210,14 +210,14 @@ p {
   max-width: 1000px;
   margin: 0 auto;
 }
-section.about {
+section .about {
   background: #f0f0f0;
   padding-top: 50px;
   padding-bottom: 50px;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
-section.appstore {
+section .appstore {
   background: #f0f0f0;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -388,19 +388,19 @@ input[type=submit] {
     max-width: 1000px;
     align-items: center;
   }
+  .row-contact .col {
+    width: 100%;
+  }
   .contact .row .row-contact .col {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .row .row-contact .col .col-50 {
+  .contact .row .row-contact .col .col-50 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 10px;
     margin: 0;
-  }
-  .row-contact .col {
-    width: 100%;
   }
 }

@@ -53,7 +53,6 @@ buttons.forEach(button => button.addEventListener('mouseout', white));
 const form = document.querySelectorAll('.popupForm');
 
 const openForm = () => {
-  /*form.classList.toggle('form--open');*/
   alert("Coming Soon!");
 }
 buttons.forEach(button => button.addEventListener('click', openForm));

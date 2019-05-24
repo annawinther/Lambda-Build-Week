@@ -45,48 +45,58 @@ p{
     padding-top: 40px;
     display:flex;
 }
-.intro .row{
+.intro {
+    .row{
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
     width:100%;
+    }
 }
+
 .row {
     width:100%;
 }
-.col .center{
+.col {
+    .center{
     margin:0 auto;
     align-items: center;
+    }
 }
-.intro .row h1{
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom:0;
+.intro  {
+    .row{
+        h1{
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom:0;
+            }
+        p{
+            font-weight:300;
+            font-size:0.5em;
+            }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-decoration: none;
+            .btn{
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                border-radius: 20px 20px 20px 20px;
+                padding: 1rem;
+                margin: 10px;
+                }
+            }  
+     }
 }
-.intro .row p {
-    font-weight:300;
-    font-size:0.5em;
-}
-.intro .row p{
-    text-align: center;
-    font-size: 1.5rem;
-}
-.intro .row .buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration: none;
-}
-.intro .row .buttons .btn{
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    border-radius: 20px 20px 20px 20px;
-    padding: 1rem;
-    margin: 10px;
-}
+
 .btn2{
    
     background-color: #fcc419;
@@ -98,25 +108,26 @@ p{
 .appstore .row{
     padding-top:50px;
     padding-bottom:50px;
-}
-.appstore .row .col .img{
-    max-width:30%;
-    text-align: center;
-    margin: 0 auto;
+
+    .col .img{
+        max-width:30%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .about .row{
     max-width:1000px;
     margin:0 auto;
 }
-section.about{
+section .about{ 
     background:#f0f0f0;
     padding-top:50px;
     padding-bottom:50px;
     border-top: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
 }
-section.appstore{
+section .appstore{
     background:#f0f0f0;
     padding-top:50px;
     padding-bottom:50px;
@@ -164,45 +175,44 @@ section.appstore{
     justify-content: space-between
 }
 .stats{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    max-width:1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
     margin: 0 auto;
-}
-.stats .col{
-    text-align:center;
-    padding: 50px;
-    
-}
-.stats .col h2{
-    font-size:4.5em;
-    font-weight:800;
-    padding:0;
-    margin:0;
-}
-.stats .col small{
-    font-size:0.20em;
-    font-weight:100;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    .col{
+        text-align: center;
+        padding: 50px;
+            h2{
+                font-size: 4.5em;
+                font-weight: 800;
+                padding: 0;
+                margin: 0;
+            }
+            small{
+                font-size: 0.20em;
+                font-weight: 100;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+            }
+     }
 }
 section{
-    margin-top:50px;
+    margin-top: 50px;
 }
 .works .row{
-    margin:0 auto;
-    max-width:1000;
-    text-align:center;
+    margin: 0 auto;
+    max-width: 1000;
+    text-align: center;
 }
 .works .steps .col{
     flex-basis: 100%;
-    padding:20px;
-}
-.works .steps .col h1{
-    font-size:7em;
-    padding:0;
-    margin:0;
+    padding: 20px;
+    h1{
+        font-size: 7em;
+        padding: 0;
+        margin: 0;
+    }
 }
 .works .steps{
     display:flex;
@@ -242,10 +252,10 @@ section{
     flex-direction: row;
     max-width: 1000px;
     margin: 0 auto;
-}
-.row-contact .col{
-    width:50%;
-}
+    .col{
+        width:50%;
+    }
+} 
 form .text{
     color: black;
     text-align: left;
@@ -267,7 +277,6 @@ textarea{
     box-sizing: border-box;
     border: 1px solid grey;
 }
-
 input[type=submit]{
     background-color: #f2c351;
     color: white;
@@ -279,8 +288,6 @@ input[type=submit]{
     padding: 14px 28px;
     width: auto;
 }
-   
-
 @media(max-width:600px){
     .contact .row .col{
         display: flex;
@@ -291,21 +298,22 @@ input[type=submit]{
         flex-direction: column-reverse;
         max-width: 1000px;
         align-items: center;
+        .col {
+            width: 100%;
+        }
     }
     .contact .row .row-contact .col{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        .col-50{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 10px;
+            margin: 0;
+        }  
     }
-     .row .row-contact .col .col-50{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 10px;
-        margin: 0;
-    }  
-    .row-contact .col {
-        width: 100%;
-    }
+    
 }
 
